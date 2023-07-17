@@ -1,0 +1,290 @@
+// -------- Colors -----------
+//梯度色板，梯度色板提供12中颜色供以使用
+// 但是在项目使用中不能够直接引用梯度色板
+@green1: #f6ffed;
+@green2: #d9f7be;
+@green3: #b7eb8f;
+@green4: #95de64;
+@green5: #73d13d;
+@green6: #52c41a;
+@green7: #389e0d;
+@green8: #237804;
+@green9: #135200;
+@green10: #092b00;
+@gold1: #fffbe6;
+@gold2: #fff1b8;
+@gold3: #ffe58f;
+@gold4: #ffd666;
+@gold5: #ffc53d;
+@gold6: #faad14;
+@gold7: #d48806;
+@gold8: #ad6800;
+@gold9: #874d00;
+@gold10: #613400;
+@red1: #fff2f0;
+@red2: #ffccc7;
+@red3: #ffa39e;
+@red4: #ff7875;
+@red5: #ff4d4f;
+@red6: #f5222d;
+@red7: #cf1322;
+@red8: #a8071a;
+@red9: #820014;
+@red10: #5c0011;
+@geekblue1: #f0f5ff;
+@geekblue2: #d6e4ff;
+@geekblue3: #adc6ff;
+@geekblue4: #85a5ff;
+@geekblue5: #597ef7;
+@geekblue6: #2f54eb;
+@geekblue7: #1d39c4;
+@geekblue8: #10239e;
+@geekblue9: #061178;
+@geekblue10: #030852;
+@blue1: #E6F6FF;
+@blue2: #b8e2ff;
+@blue3: #8fceff;
+@blue4: #66b8ff;
+@blue5: #3d9eff;
+@blue6: #147ffa;
+@blue7: #065fd4;
+@blue8: #0045ad;
+@blue9: #003287;
+@blue10: #002061;
+@volcano1: #fff2e8;
+@volcano2: #ffd8bf;
+@volcano3: #ffbb96;
+@volcano4: #ff9c6e;
+@volcano5: #ff7a45;
+@volcano6: #fa541c;
+@volcano7: #d4380d;
+@volcano8: #ad2102;
+@volcano9: #871400;
+@volcano10: #610b00;
+@orange1: #fff7e6;
+@orange2: #ffe7ba;
+@orange3: #ffd591;
+@orange4: #ffc069;
+@orange5: #ffa940;
+@orange6: #fa8c16;
+@orange7: #d46b08;
+@orange8: #ad4e00;
+@orange9: #873800;
+@orange10: #612500;
+@yellow1: #feffe6;
+@yellow2: #ffffb8;
+@yellow3: #fffb8f;
+@yellow4: #fff566;
+@yellow5: #ffec3d;
+@yellow6: #fadb14;
+@yellow7: #d4b106;
+@yellow8: #ad8b00;
+@yellow9: #876800;
+@yellow10: #614700;
+@lime1: #fcffe6;
+@lime2: #f4ffb8;
+@lime3: #eaff8f;
+@lime4: #d3f261;
+@lime5: #bae637;
+@lime6: #a0d911;
+@lime7: #7cb305;
+@lime8: #5b8c00;
+@lime9: #3f6600;
+@lime10: #254000;
+@cyan1: #e6fffb;
+@cyan2: #b5f5ec;
+@cyan3: #87e8de;
+@cyan4: #5cdbd3;
+@cyan5: #36cfc9;
+@cyan6: #13c2c2;
+@cyan7: #08979c;
+@cyan8: #006d75;
+@cyan9: #00474f;
+@cyan10: #002329;
+@purple1: #f9f0ff;
+@purple2: #efdbff;
+@purple3: #d3adf7;
+@purple4: #b37feb;
+@purple5: #9254de;
+@purple6: #722ed1;
+@purple7: #531dab;
+@purple8: #391085;
+@purple9: #22075e;
+@purple10: #120338;
+@magenta1: #fff0f6;
+@magenta2: #ffd6e7;
+@magenta3: #ffadd2;
+@magenta4: #ff85c0;
+@magenta5: #f759ab;
+@magenta6: #eb2f96;
+@magenta7: #c41d7f;
+@magenta8: #9e1068;
+@magenta9: #780650;
+@magenta10: #520339;
+@gry1: #FAFAFA;
+@gry2: #F5F5F5;
+@gry3: #F2F3F5;
+@gry4: #EEEFF2;
+@gry5: #DDDFE4;
+@gry6: #BCBEC2;
+@gry7: #93989F;
+@gry8: #6C7175;
+@gry9: #565B60;
+@gry10: #42464B;
+@gry11: #25282D;
+@gry12: #1C1E21;
+@gry13: #131416;
+
+// 不随主题变化的黑白色
+@colorWhite:#fff;
+@colorBlack:#000;
+
+// Neutral-亮色
+@colorText-light: @gry11; //一级文本色  默认的文字色，也是最深文本色
+@colorTextSecondary-light: @gry9; //二级文本色  作为第二梯度的文本颜色，一般用于不那么需要强化文本的颜色场景
+@colorTextTertiary-light: @gry7; //三级文本色  一般用户描述性文本，例如表单中的补充说明性文字
+@colorTextQuaternary-light: @gry6; //四级文本色  一般用于禁用和占位符文本
+@colorBgContainer-light: @colorWhite; //组件容器背景色  在亮色模式下，该颜色为默认的组件容器颜色
+@colorBgElevated-light: @colorWhite; //浮层容器背景色  悬浮类型组件的背景色
+@colorBgLayout-light: @gry1; //布局背景色  页面整体布局中最底层的颜色
+@colorBgSpotlight-light: rgba(0,0,0,0.85); //引起注意的背景色  该色用于需要引起用户强烈关注的内容背景色，目前只用在tooltip的背景色上
+@colorBgMask-light: rgba(0,0,0,0.45); //浮层背景蒙层颜色  用作于模态弹窗下的背景蒙层
+@colorBorder-light:@gry5; //一级边框色  默认使用的边框颜色，用于组件中的描边颜色，例如描边按钮、输入框等
+@colorBorderSecondary-light: @gry4; //二级边框色  常用作于容器的边框色和容器内部组与组之间的分割线颜色
+@colorFill-light: @gry5; //一级填充色  最深的填充色，用于拉开与二、三级填充色的区分度，目前在Slider 的 hover 效果用用到
+@colorFillSecondary-light: @gry4; //二级填充色  用于较为明显地勾勒出元素形体，如 Rate、Skeleton 等。也可以作为三级填充色的 Hover 状态，如 Table 等
+@colorFillTertiary-light: @gry3; //三级填充色  用于勾勒出元素形体的场景，如 Slider、Segmented 等。如无强调需求的情况下，建议使用三级填色作为默认填色
+@colorFillQuaternary-light:@gry1; //四级填充色  最弱一级的填充色，适用于不易引起注意的色块，例如斑马纹、区分边界的色块等
+
+// Neutral-暗色
+@colorText-dark:@gry4; //一级文本色  默认的文字色
+@colorTextSecondary-dark:@gry7; //二级文本色  作为第二梯度的文本颜色，一般用于不那么需要强化文本的颜色场景
+@colorTextTertiary-dark:@gry8; //三级文本色  一般用户描述性文本，例如表单中的补充说明性文字
+@colorTextQuaternary-dark: @gry10; //四级文本色  一般用于禁用和占位符文本
+@colorBgContainer-dark: @gry13; //组件容器背景色  在亮色模式下，该颜色为默认的组件容器颜色
+@colorBgElevated-dark: @gry12; //浮层容器背景色  悬浮类型组件的背景色
+@colorBgLayout-dark: @gry2; //布局背景色  页面整体布局中最底层的颜色
+@colorBgSpotlight-dark: @gry10; //引起注意的背景色  该色用于需要引起用户强烈关注的内容背景色，目前只用在tooltip的背景色上
+@colorBgMask-dark: rgba(0, 0, 0, 0.45); //浮层背景蒙层颜色  用作于模态弹窗下的背景蒙层
+@colorBorder-dark:@gry10; //一级边框色  默认使用的边框颜色，用于组件中的描边颜色，例如描边按钮、输入框等
+@colorBorderSecondary-dark:@gry11; //二级边框色  常用作于容器的边框色和容器内部组与组之间的分割线颜色
+@colorFill-dark: rgba(191, 216, 255, 0.16); //一级填充色  最深的填充色，用于拉开与二、三级填充色的区分度，目前在Slider 的 hover 效果用用到
+@colorFillSecondary-dark: rgba(191, 216, 255, 0.12); //二级填充色  用于较为明显地勾勒出元素形体，如 Rate、Skeleton 等。也可以作为三级填充色的 Hover 状态，如 Table 等
+@colorFillTertiary-dark: rgba(191, 216, 255, 0.08); //三级填充色  用于勾勒出元素形体的场景，如 Slider、Segmented 等。如无强调需求的情况下，建议使用三级填色作为默认填色
+@colorFillQuaternary-dark: rgba(191, 216, 255, 0.04); //四级填充色  最弱一级的填充色，适用于不易引起注意的色块，例如斑马纹、区分边界的色块等
+
+// VIP
+@colorVipBg-light: #FFFCF3;
+@colorVipBg-dark:rgba(255,151,0,0.08);
+@colorVipBgHover-light: #FFF8E5;
+@colorVipBgHover-dark:rgba(255,151,0,0.12);
+@colorVipBorder: #ff9700;
+@colorVipBorderHover: #ffb029;
+@colorVipHover: #ffb029;
+@colorVip: #ff9700;
+@colorVipActive: #d97b00;
+@colorVipTextHover: #ffb029;
+@colorVipText: #ff9700;
+@colorVipTextActive: #d97b00;
+
+// Primary
+@colorPrimaryBg: @blue1; //主色浅色背景色  主色浅色背景色，一般用于视角层级较弱的选中状态
+@colorPrimaryBgHover: @blue2; //主色浅色背景悬浮态  与主色浅色背景颜色相对的悬浮态颜色
+@colorPrimaryBorder: @blue3; //主色描边色  主色梯度下的描边用色，用在 Slider 组件的描边上
+@colorPrimaryBorderHover: @blue4; //主色描边悬浮态  主色梯度下的描边用色的悬浮态，Slider 、Button 等组件的描边 Hover 时会使用
+@colorPrimaryHover: @blue5; //主色悬浮态  主色梯度下的悬浮态，高使用频率
+@colorPrimary: @blue6; //品牌主色  品牌色是体现产品特性和传播理念最直观的视觉元素之一。在你完成品牌主色的选取之后，我们会自动帮你生成一套完整的色板，并赋予它们有效的设计语义
+@colorPrimaryActive: @blue7; //主色激活态  主色梯度下深色激活态
+@colorPrimaryTextHover: @blue5; //主色文本悬浮态  主色梯度下的文本悬浮态
+@colorPrimaryText: @blue6; //主色文本  主色梯度下的文本颜色
+@colorPrimaryTextActive: @blue7; //主色文本激活态  主色梯度下的文本激活状态
+
+// Success
+@colorSuccessBg: @green1; //成功色的浅色背景颜色  用于 Tag 和 Alert 的成功态背景色
+@colorSuccessBgHover: @green2; //成功色浅色背景颜色hover状态色  一般用于视觉层级较弱的选中状态
+@colorSuccessBorder: @green3; //成功色的描边色      用于 Tag 和 Alert 的成功态描边色
+@colorSuccessBorderHover: @green4; //成功色的描边色悬浮态
+@colorSuccessHover: @green4; //成功色的悬浮态
+@colorSuccess: @green6; //成功色  用于表示操作成功的Token序列，如 Result、Progress 等组件会使用该组梯度变量
+@colorSuccessActive: @green7; //成功色的激活态
+@colorSuccessTextHover: @green5; //成功色的文本悬浮态
+@colorSuccessText: @green6; //成功色的文本默认态
+@colorSuccessTextActive: @green7; //成功色的文本激活态
+
+// Warning
+@colorWarningBg: @gold1; //警戒色的浅色背景颜色
+@colorWarningBgHover: @gold2; //警戒色的浅色背景色悬浮态
+@colorWarningBorder: @gold3; //警戒色的描边色
+@colorWarningBorderHover: @gold4; //警戒色的描边色悬浮态
+@colorWarningHover: @gold4; //警戒色的悬浮态
+@colorWarning: @gold6; //警示色  用于表示操作警告的Token序列，如 Notification、 Alert等警告类组件或 Input 输入类等组件会使用该组梯度变量
+@colorWarningActive: @gold7; //警戒色的激活态
+@colorWarningTextHover: @gold5; //警戒色的文本悬浮态
+@colorWarningText: @gold6; //警戒色的文本默认态
+@colorWarningTextActive: @gold7; //警戒色的文本激活态
+
+// Error
+@colorErrorBg: @red1; //错误色的浅色背景颜色
+@colorErrorBgHover: @red2; //错误色的浅色背景色悬浮态
+@colorErrorBorder: @red3; //错误色的描边色
+@colorErrorBorderHover: @red4; //错误色的描边色悬浮态
+@colorErrorHover: @red4; //错误色的悬浮态
+@colorError: @red6; //错误色  用于表示操作失败的Token序列，如失败按钮、错误状态提示（Result）组件等
+@colorErrorActive: @red7; //错误色的激活态
+@colorErrorTextHover: @red5; //错误色的文本悬浮态
+@colorErrorText: @red6; //错误色的文本默认态
+@colorErrorTextActive: @red7; //错误色的文本激活态
+
+// Info
+@colorInfoBg: @colorPrimaryBg; //信息色的浅色背景颜色
+@colorInfoBgHover: @colorPrimaryBgHover; //信息色的浅色背景色悬浮态
+@colorInfoBorder: @colorPrimaryBorder; //信息色的描边色
+@colorInfoBorderHover: @colorPrimaryHover; //信息色的描边色悬浮态
+@colorInfoHover: @colorPrimaryHover; //信息色的悬浮态
+@colorInfo: @colorPrimary; //信息色  信息色目前跟随主色，各产品可以根据变量重新定义一个信息色，用于表示操作信息的Token序列，如 Alert 、Tag、 Progress 等组件都有用到该组梯度变量
+@colorInfoActive: @colorPrimaryActive; //信息色的激活态
+@colorInfoTextHover: @colorPrimaryTextHover; //信息色的文本悬浮态
+@colorInfoText: @colorPrimaryText; //信息色的文本默认态
+@colorInfoTextActive: @colorPrimaryTextActive; //信息色的文本激活态
+
+// Font Sizes
+@fontSize: 14px; //默认字号  设计系统中使用最广发的字体大小
+@fontSizeSM: 12px;
+@fontSizeLG: 16px;
+@fontSizeXL: 20px;
+@fontSizeHeiding1: 38px;
+@fontSizeHeading2: 30px;
+@fontSizeHeading3: 24px;
+@fontSizeHeading4: 20px;
+@fontSizeHeading5: 16px;
+
+// Line Heights
+@lineHeight: 157%;
+@lineHeightSM: 167%;
+@lineHeightLG: 150%;
+@lineHeightHeading1: 121%;
+@lineHeightHeading2: 127%;
+@lineHeightHeading3: 133%;
+@lineHeightHeading4: 140%;
+@lineHeightHeading5: 150%;
+
+// Border Radius
+@borderRadius: 6px; //基础圆角  基础组件的圆角大小，例如卡片、按钮、输入框等
+@borderRadiusSM: 4px; //SM号圆角  SM号圆角，用于小尺寸组件的圆角，例如按钮、输入框、selec等输入类型控件在small size下的圆角
+@borderRadiusLG: 8px; //LG号圆角  用于组件中的一些大圆角，如card、modal等一些组件样式
+@borderRadiusXS: 2px; //XS号圆角  用于组件中的一些小圆角，如segmented、arrow等一些内部圆角的组件样式中
+@borderRadiusXL: 12px; //XL号圆角  目前antV5没有该梯度，后期需要新增
+
+// Box Shadow
+@boxShadow: 0 6px 16px -8px rgba(0, 0, 0, 0.08), 0 9px 28px 0 rgba(0, 0, 0, 0.05), 0 12px 48px 16px rgba(0, 0, 0, 0.03);
+@boxShadowSecondary: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+@boxShadowTertiary: 0 1px 2px 0 rgba(0, 0, 0, 0.03), 0 1px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px 0 rgba(0, 0, 0, 0.02);
+
+// Font Weights
+@regular: 400;
+@medium: 500; // 请注意，需要字体支持
+@bold: 600;
+@light: 300;
+
+// Font Family
+@fontFamily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
